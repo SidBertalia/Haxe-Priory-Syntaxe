@@ -1,0 +1,28 @@
+{
+  "name": "haxe-priori",
+  "displayName": "Haxe Priori Syntax Highlighter",
+  "description": "Realce de sintaxe XML para blocos @priori em arquivos Haxe.",
+  "version": "0.0.1",
+  "publisher": "Tuco",
+  "icon": "icon.png",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:SidBertalia/Haxe-Priory-Syntaxe.git"
+  },
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": ["Languages"],
+  "contributes": {
+    "grammars": [
+      {
+        "language": "haxe",
+        "scopeName": "source.haxe",
+        "path": "./syntaxes/priori.tmLanguage.json",
+        "injectTo": ["source.haxe"]
+      }
+    ]
+  }
+}
+

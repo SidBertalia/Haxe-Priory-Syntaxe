@@ -1,0 +1,19 @@
+{
+  "name": "Prioricode Embedded in Haxe",
+  "scopeName": "source.haxe",
+  "patterns": [
+    {
+      "name": "meta.embedded.block.priori",
+      "begin": "@priori\\('\\s*",
+      "end": "'\\)",
+      "contentName": "text.xml",
+      "patterns": [
+        {
+          "include": "text.xml"
+        }
+      ]
+    }
+  ],
+  "repository": {}
+}
+
