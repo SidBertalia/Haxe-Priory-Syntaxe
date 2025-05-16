@@ -2,7 +2,24 @@
 
 ![Extension Icon](https://github.com/SidBertalia/Haxe-Priory-Syntaxe/raw/main/haxe-priori-extension/icon.png)
 
-VS Code extension that adds XML syntax highlighting for `@priori('...')` blocks in `.hx` files.
+VS Code extension that adds **XML** syntax highlighting for **`@priori('...')`** blocks in **`.hx`** files.
+
+---
+
+## Quick Install (Recommended)
+
+A pre-built `.vsix` file is available in this repository for your convenience.
+
+1. [Download the latest **`haxe-priori-*.vsix`** file from the repository.](https://github.com/SidBertalia/Haxe-Priory-Syntaxe/tree/main/haxe-priori-extension)
+2. Open VS Code.
+3. Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on macOS) and select `Extensions: Install from VSIX...`
+4. Browse and select the downloaded `.vsix` file.
+
+---
+
+## Manual Installation (Build from Source)
+
+If you prefer to build the extension yourself, follow these steps:
 
 ---
 
@@ -98,7 +115,7 @@ code --install-extension haxe-priori-*.vsix
 ```
 
 **Example: Priori Block Highlight**
-When Priori Highlight is enabled, your `@priori` block will be highlighted as XML, like this:
+When Priori Highlight is enabled, your **`@priori`** block will be highlighted as **`XML`**, like this:
 
 ```xml
 @priori('
@@ -124,4 +141,4 @@ When Priori Highlight is enabled, your `@priori` block will be highlighted as XM
 >
 > This means that **all other Haxe code in the file will lose its syntax highlighting and related editor features** (*such as code completion, error checking, etc*).
 >
-> To restore **normal `Haxe` highlighting and functionality**, use the **Disable Priori Highlight** option in the context menu.
+> To restore normal **`Haxe`** highlighting and functionality, use the **Disable Priori Highlight** option in the context menu.
