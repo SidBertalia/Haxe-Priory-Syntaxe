@@ -1,6 +1,8 @@
 # Haxe Priori Syntax Highlighter
-
 ![Extension Icon](https://github.com/SidBertalia/Haxe-Priory-Syntaxe/raw/main/haxe-priori-extension/icon.png)
+
+[![GitHub Sponsors](https://img.shields.io/badge/Sponsor%20Me-%23EA54AE.svg?&style=for-the-badge&logo=github&logoColor=white)](https://github.com/sponsors/SidBertalia)
+
 
 VS Code extension that adds **XML** syntax highlighting for **`@priori('...')`** blocks in **`.hx`** files.
 
