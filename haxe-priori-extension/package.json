@@ -1,28 +1,69 @@
 {
-  "name": "haxe-priori",
-  "displayName": "Haxe Priori Syntax Highlighter",
-  "description": "Realce de sintaxe XML para blocos @priori em arquivos Haxe.",
-  "version": "0.0.1",
-  "publisher": "Tuco",
-  "icon": "icon.png",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:SidBertalia/Haxe-Priory-Syntaxe.git"
-  },
-  "engines": {
-    "vscode": "^1.70.0"
-  },
-  "categories": ["Languages"],
-  "contributes": {
-    "grammars": [
-      {
-        "language": "haxe",
-        "scopeName": "source.haxe",
-        "path": "./syntaxes/priori.tmLanguage.json",
-        "injectTo": ["source.haxe"]
-      }
-    ]
-  }
+	"name": "haxe-priori",
+	"displayName": "Haxe Priori Syntax Highlighter",
+	"description": "Realce de sintaxe XML para blocos @priori em arquivos Haxe.",
+	"version": "0.0.6",
+	"publisher": "Tuco",
+	"icon": "icon.png",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:SidBertalia/Haxe-Priory-Syntaxe.git"
+	},
+	"engines": {
+		"vscode": "^1.75.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"languages": [
+			{
+				"id": "priori-haxe",
+				"aliases": [
+					"Priori Haxe"
+				],
+				"extensions": [
+					".priorihaxe"
+				],
+				"configuration": "./syntaxes/priori-language-configuration.json"
+			}
+		],
+		"commands": [
+			{
+				"command": "haxe-priori.enableHighlight",
+				"title": "Enable Priori Highlight"
+			},
+			{
+				"command": "haxe-priori.disableHighlight",
+				"title": "Disable Priori Highlight"
+			}
+		],
+		"menus": {
+			"editor/context": [
+				{
+					"command": "haxe-priori.enableHighlight",
+					"when": "!haxePrioriHighlightEnabled && (editorLangId == haxe || editorLangId == priori-haxe)",
+					"group": "navigation@2"
+				},
+				{
+					"command": "haxe-priori.disableHighlight",
+					"when": "haxePrioriHighlightEnabled && (editorLangId == haxe || editorLangId == priori-haxe)",
+					"group": "navigation@2"
+				}
+			]
+		},
+		"grammars": [
+			{
+				"language": "priori-haxe",
+				"scopeName": "priori-haxe",
+				"path": "./syntaxes/priori.tmLanguage.json"
+			}
+		]
+	},
+	"activationEvents": [
+		"onCommand:haxe-priori.enableHighlight",
+		"onCommand:haxe-priori.disableHighlight"
+	]
 }
-
