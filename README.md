@@ -15,6 +15,8 @@ A pre-built `.vsix` file is available in this repository for your convenience.
 3. Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on macOS) and select `Extensions: Install from VSIX...`
 4. Browse and select the downloaded `.vsix` file.
 
+**After instalation, reload the VS Code window** (`Ctrl+Shift+P -> Developer: Reload Window`).
+
 ---
 
 ## Manual Installation (Build from Source)
@@ -85,6 +87,8 @@ code --install-extension haxe-priori-*.vsix
 ```
 
 ---
+
+**After instalation, reload the VS Code window** (`Ctrl+Shift+P -> Developer: Reload Window`).
 
 ## Usage
 
