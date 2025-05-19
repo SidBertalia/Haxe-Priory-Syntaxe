@@ -1,6 +1,8 @@
 # Haxe Priori Syntax Highlighter
-
 ![Extension Icon](https://github.com/SidBertalia/Haxe-Priory-Syntaxe/raw/main/haxe-priori-extension/icon.png)
+
+[![GitHub Sponsors](https://img.shields.io/badge/Sponsor%20Me-%23EA54AE.svg?&style=for-the-badge&logo=github&logoColor=white)](https://github.com/sponsors/SidBertalia)
+
 
 VS Code extension that adds **XML** syntax highlighting for **`@priori('...')`** blocks in **`.hx`** files.
 
@@ -14,6 +16,8 @@ A pre-built `.vsix` file is available in this repository for your convenience.
 2. Open VS Code.
 3. Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on macOS) and select `Extensions: Install from VSIX...`
 4. Browse and select the downloaded `.vsix` file.
+
+**After instalation, reload the VS Code window** (`Ctrl+Shift+P -> Developer: Reload Window`).
 
 ---
 
@@ -85,6 +89,8 @@ code --install-extension haxe-priori-*.vsix
 ```
 
 ---
+
+**After instalation, reload the VS Code window** (`Ctrl+Shift+P -> Developer: Reload Window`).
 
 ## Usage
 
