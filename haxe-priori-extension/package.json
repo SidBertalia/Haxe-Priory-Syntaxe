@@ -2,7 +2,7 @@
 	"name": "haxe-priori",
 	"displayName": "Haxe Priori Syntax Highlighter",
 	"description": "Realce de sintaxe XML para blocos @priori em arquivos Haxe.",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"publisher": "Tuco",
 	"icon": "icon.png",
 	"license": "MIT",
@@ -33,11 +33,11 @@
 		"commands": [
 			{
 				"command": "haxe-priori.enableHighlight",
-				"title": "Enable Priori Highlight"
+				"title": "ENABLE - Priori Highlight"
 			},
 			{
 				"command": "haxe-priori.disableHighlight",
-				"title": "Disable Priori Highlight"
+				"title": "DISABLE - Priori Highlight"
 			}
 		],
 		"menus": {
@@ -45,12 +45,12 @@
 				{
 					"command": "haxe-priori.enableHighlight",
 					"when": "!haxePrioriHighlightEnabled && (editorLangId == haxe || editorLangId == priori-haxe)",
-					"group": "navigation@2"
+					"group": "1_modification@1"
 				},
 				{
 					"command": "haxe-priori.disableHighlight",
 					"when": "haxePrioriHighlightEnabled && (editorLangId == haxe || editorLangId == priori-haxe)",
-					"group": "navigation@2"
+					"group": "1_modification@1"
 				}
 			]
 		},
