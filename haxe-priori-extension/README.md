@@ -4,7 +4,6 @@
 
 [![GitHub Sponsors](https://img.shields.io/badge/Sponsor%20Me-%23EA54AE.svg?&style=for-the-badge&logo=github&logoColor=white)](https://github.com/sponsors/SidBertalia)
 
-
 VS Code extension that adds **XML** syntax highlighting for **`@priori('...')`** blocks in **`.hx`** files.
 
 ---
@@ -88,6 +87,7 @@ Alternatively, you can install the extension from the terminal (all systems):
 ```sh
 code --install-extension haxe-priori-*.vsix
 ```
+
 **After instalation, reload the VS Code window** (`Ctrl+Shift+P -> Developer: Reload Window`).
 
 ---
@@ -96,8 +96,8 @@ code --install-extension haxe-priori-*.vsix
 
 1. **Open a `.hx` file** in VS Code.
 2. **Right-click** inside the editor and select:
-   - **Enable Priori Highlight** to activate XML highlighting for the entire file (including `@priori` blocks).
-   - **Disable Priori Highlight** to return to the default Haxe syntax highlighting.
+   - **ENABLE - Priori Highlight** to activate XML highlighting for the entire file (including `@priori` blocks).
+   - **DISABLE - Priori Highlight** to return to the default Haxe syntax highlighting.
    - Only one of these options will appear at a time, depending on the current state.
 
 **Example of a `@priori` block in a `.hx` file**
